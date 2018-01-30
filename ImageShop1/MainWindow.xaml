@@ -4,9 +4,23 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ImageShop1"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
         
+         mc:Ignorable="d"
+        Title="MainWindow" Height="5003.094" Width="841.76">
+    <Grid>
+        <Image x:Name="imageBoxx" HorizontalAlignment="Left" Margin="100,200,0,0" VerticalAlignment="Top"/>
+        <ScrollBar HorizontalAlignment="Left" Margin="807,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Tboxx" HorizontalAlignment="Left" Height="35" Margin="47,42,0,0" TextWrapping="Wrap" Text="Image path here" VerticalAlignment="Top" Width="302" />
+        <Button Content="Load image" HorizontalAlignment="Left" Margin="393,51,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Slider x:Name="backSliderRed" HorizontalAlignment="Left" Margin="100,109,0,0" VerticalAlignment="Top" Width="249" Maximum="255" ValueChanged="backSlider_ValueChanged" IsSnapToTickEnabled="True"
+    TickFrequency="1"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="33,109,0,0" TextWrapping="Wrap" Text="Red Filter" VerticalAlignment="Top" Width="50"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="20,132,0,0" TextWrapping="Wrap" Text="Green Filter Filter" VerticalAlignment="Top" Width="63"/>
+        <Slider x:Name="backSliderGreen" HorizontalAlignment="Left" Margin="100,132,0,0" VerticalAlignment="Top" Width="249" Maximum="255" ValueChanged="backSlider_ValueChanged" IsSnapToTickEnabled="True"
+            TickFrequency="1"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="20,155,0,0" TextWrapping="Wrap" Text="Blue Filter Filter" VerticalAlignment="Top" Width="63"/>
+        <Slider x:Name="backSliderBlue" HorizontalAlignment="Left" Margin="100,155,0,0" VerticalAlignment="Top" Width="249" Maximum="255" ValueChanged="backSlider_ValueChanged" IsSnapToTickEnabled="True"
+            TickFrequency="1"/>
+
     </Grid>
 </Window>
